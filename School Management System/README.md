@@ -28,7 +28,7 @@ To run this system, you will need the following:
 Clone the repository to your local machine using the following command:
 
 ```sh
-git clone https://github.com/yourusername/school-management-system.git
+git clone https://github.com/richardHaggioGwati/java_projects/tree/main/School%20Management%20System
 ```
 
 ### Step 2: Set Up the Database
