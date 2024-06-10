@@ -22,4 +22,23 @@ public class Student {
         feesPaid += fees;
     }
 
+    public int getId() {
+        return this.id;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getGrade() {
+        return this.grade;
+    }
+
+    public int getFeesPaid() {
+        return this.feesPaid;
+    }
+
+    public int getFeesTotal() {
+        return this.feesTotal;
+    }
 }
