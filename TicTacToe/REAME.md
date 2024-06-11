@@ -89,9 +89,6 @@ Welcome to the TicTacToe Game! This Java application allows you to play the clas
 - Allow players to choose their symbol (X or O).
 - Add functionality for two-player mode.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 - This project was inspired by the classic TicTacToe game.
 - Thanks to the Java community for providing excellent resources and tutorials.
