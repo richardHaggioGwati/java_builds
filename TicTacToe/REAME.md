@@ -1,8 +1,10 @@
 # TicTacToe Game
 
-Welcome to the TicTacToe Game! This Java application allows you to play the classic TicTacToe game against a computer opponent. The game runs in the console and provides a simple and fun way to enjoy this timeless game.
+Welcome to the TicTacToe Game! This Java application allows you to play the classic TicTacToe game against a computer
+opponent. The game runs in the console and provides a simple and fun way to enjoy this timeless game.
 
 ## Table of Contents
+
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [How to Run](#how-to-run)
@@ -11,19 +13,22 @@ Welcome to the TicTacToe Game! This Java application allows you to play the clas
 - [Future Enhancements](#future-enhancements)
 
 ## Features
+
 - Play TicTacToe against a computer.
 - Randomized computer moves.
 - Simple console-based UI.
 - Immediate feedback on invalid moves and game results.
 
 ## Prerequisites
+
 - Java Development Kit (JDK) installed on your machine.
 - Basic understanding of how to run Java programs from the command line.
 
 ## How to Run
+
 1. **Clone the Repository:**
     ```sh
-    git clone <repository-url>
+    git clone https://github.com/richardHaggioGwati/java_builds/tree/main/TicTacToe
     cd TicTacToe
     ```
 
@@ -38,6 +43,7 @@ Welcome to the TicTacToe Game! This Java application allows you to play the clas
     ```
 
 ## Gameplay Instructions
+
 1. The game board is represented as a 3x3 grid, with positions numbered 1 through 9:
     ```
      1 | 2 | 3
@@ -56,7 +62,9 @@ Welcome to the TicTacToe Game! This Java application allows you to play the clas
 5. The game will display the result: player wins, computer wins, or a draw (CAT).
 
 ## Code Overview
+
 ### Main Class: TicTacToe
+
 - **Variables:**
     - `playerPositions`: Stores the positions chosen by the player.
     - `computerPositions`: Stores the positions chosen by the computer.
@@ -64,10 +72,12 @@ Welcome to the TicTacToe Game! This Java application allows you to play the clas
 - **Methods:**
     - `main(String[] args)`: The entry point of the game. It initializes the game board and handles the game loop.
     - `printBoard(char[][] gameBoard)`: Prints the current state of the game board.
-    - `placePiece(char[][] gameBoard, int position, String user)`: Places the player's or computer's mark on the board based on the position.
+    - `placePiece(char[][] gameBoard, int position, String user)`: Places the player's or computer's mark on the board
+      based on the position.
     - `checkWinner(char[][] gameBoard)`: Checks for a winning condition or a draw and returns the result.
 
 ### Game Logic
+
 1. **Game Board Initialization:**
     - The game board is a 2D character array representing the 3x3 grid.
 
@@ -84,13 +94,16 @@ Welcome to the TicTacToe Game! This Java application allows you to play the clas
     - If a winning condition is met, the game declares the winner and prints the final board state.
 
 ## Future Enhancements
+
 - Implement a more sophisticated AI for the computer using the Minimax algorithm.
 - Add a graphical user interface (GUI) for a better user experience.
 - Allow players to choose their symbol (X or O).
 - Add functionality for two-player mode.
 
 ## Acknowledgements
+
 - This project was inspired by the classic TicTacToe game.
 - Thanks to the Java community for providing excellent resources and tutorials.
 
-Enjoy playing TicTacToe! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+Enjoy playing TicTacToe! If you encounter any issues or have suggestions for improvements, feel free to open an issue or
+submit a pull request. Happy coding! 🚀
