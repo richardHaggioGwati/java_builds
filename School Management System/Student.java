@@ -1,16 +1,15 @@
-public class Student {
-    private final int id;
-    private final String name;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Student  extends Person {
     private int grade;
     private int feesPaid;
-    private int feesTotal;
+    private final int feesTotal;
 
-    public Student(int id, String name, int grade) {
+    public Student(String firstName, String lastName, String gender, int age, int grade) {
+        super(firstName, lastName, gender, age);
         this.feesPaid = 0;
         this.feesTotal=30000;
-
-        this.id = id;
-        this.name = name;
         this.grade = grade;
     }
 
@@ -18,20 +17,12 @@ public class Student {
         this.grade = grade;
     }
 
-    public void updateFessPaid(int fees) {
-        feesPaid += fees;
-    }
-
-    public int getId() {
-        return this.id;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
     public int getGrade() {
         return this.grade;
+    }
+
+    public void updateFessPaid(int fees) {
+        feesPaid += fees;
     }
 
     public int getFeesPaid() {
@@ -40,5 +31,12 @@ public class Student {
 
     public int getFeesTotal() {
         return this.feesTotal;
+    }
+
+    @Override
+    public List<String> getInfo() {
+        List<String> info = new ArrayList<>();
+        info.add("Student Name: " + getFirstName() + " " + getLastName());
+        return info;
     }
 }
