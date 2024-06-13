@@ -1,27 +1,31 @@
-public class Teacher {
-    private final int id;
-    private double salary;
-    private final String name;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Teacher(int id, double salary, String name) {
-            this.id = id;
-            this.name = name;
-            this.salary = salary;
+public class Teacher extends Person {
+    private final String subject;
+    private double salary;
+
+    public Teacher(String firstName, String lastName, String gender, int age, String subject) {
+        super(firstName, lastName, gender, age);
+        this.subject = subject;
     }
 
     public double getSalary() {
         return this.salary;
     }
 
-    public int getId() {
-        return this.id;
-    }
-
-    public String getName() {
-        return this.name;
+    public String getSubject() {
+        return this.subject;
     }
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    @Override
+    public List<String> getInfo() {
+        List<String> info = new ArrayList<>();
+        info.add("Teacher Name: " + getFirstName() + " " + getLastName());
+        return info;
     }
 }
