@@ -84,6 +84,7 @@ public class LoginGUI extends Frame implements ActionListener {
                 System.out.println("Username: " + username);
                 System.out.println("Password: " + password);
                 new HomeGUI();
+                dispose();
             }
             case "Cancel" -> {
                 textUsername.setText("");
