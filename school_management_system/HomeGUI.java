@@ -7,13 +7,10 @@ public class HomeGUI extends Frame {
     public HomeGUI() {
         setLayout(new BorderLayout(20, 15));
 
-        Label btn4 = new Label("WEST");
-        Label btn5 = new Label("CENTER");
-
         add(PanelNorth(), BorderLayout.NORTH);
         add(CustomPanel("Students", new Student("John", "Doe", "Male", 20, 1)), BorderLayout.EAST);
         add(CustomPanel("Teachers", new Teacher("John", "Doe", "Male", 20, "Physics")), BorderLayout.WEST);
-        add(btn5, BorderLayout.CENTER);
+        add(CustomExpenseIncomePanel(), BorderLayout.CENTER);
 
         setTitle("Home");
         setBackground(new Color(229, 229, 229));
@@ -66,6 +63,38 @@ public class HomeGUI extends Frame {
 
         panel.add(labelPanel, BorderLayout.NORTH);
         panel.add(list, BorderLayout.CENTER);
+
+        return panel;
+    }
+
+    private Panel CustomExpenseIncomePanel() {
+        Panel panel = new Panel();
+        panel.setLayout(new GridLayout(1, 2, 10, 10)); // 2 rows, 1 column with spacing
+
+        Panel expensePanel = new Panel(new BorderLayout());
+        Label expenseHeader = new Label("Expenses", Label.CENTER);
+        expenseHeader.setFont(new Font("Arial", Font.BOLD, 16));
+        List expenseList = new List();
+        expenseList.add("Rent");
+        expenseList.add("Utilities");
+        expenseList.add("Groceries");
+        expenseList.add("Transportation");
+        expensePanel.add(expenseHeader, BorderLayout.NORTH);
+        expensePanel.add(expenseList, BorderLayout.CENTER);
+
+        Panel incomePanel = new Panel(new BorderLayout());
+        Label incomeHeader = new Label("Income", Label.CENTER);
+        incomeHeader.setFont(new Font("Arial", Font.BOLD, 16));
+        List incomeList = new List();
+        incomeList.add("Salary");
+        incomeList.add("Freelancing");
+        incomeList.add("Investments");
+        incomeList.add("Rentals");
+        incomePanel.add(incomeHeader, BorderLayout.NORTH);
+        incomePanel.add(incomeList, BorderLayout.CENTER);
+
+        panel.add(expensePanel);
+        panel.add(incomePanel);
 
         return panel;
     }
