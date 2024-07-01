@@ -11,11 +11,11 @@ import java.util.Objects;
 class Employee {
 
     private @Id
-    @GeneratedValue Long id;
+    @GeneratedValue Long id; //TODO: unique ID
     private String name;
     private String role;
 
-    Employee() {}
+    public Employee() {}
 
     Employee(String name, String role) {
         this.name = name;
