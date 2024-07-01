@@ -20,15 +20,15 @@ class EmployeeController {
         return repository.findAll();
     }
 
+    // Single item
+    @GetMapping("/employees/{id}")
+    Employee one(@PathVariable Long id) {
+        return repository.findById(id).orElseThrow(() -> new EmployeeNotFoundException(id));
+    }
+
     @PostMapping("/employees")
     Employee newEmployee(@RequestBody Employee newEmployee) {
         return repository.save(newEmployee);
-    }
-
-    // Single item
-    @GetMapping("/employee/{id}")
-    Employee one(@PathVariable Long id) {
-        return repository.findById(id).orElseThrow(() -> new EmployeeNotFoundException(id));
     }
 
     @PutMapping("/employee/{id}")
