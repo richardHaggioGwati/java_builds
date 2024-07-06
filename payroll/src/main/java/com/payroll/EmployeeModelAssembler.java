@@ -6,6 +6,7 @@ import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.stereotype.Component;
 
+// this assembler is automatically created when the app starts
 @Component
 class EmployeeModelAssembler implements RepresentationModelAssembler<Employee, EntityModel<Employee>> {
 
