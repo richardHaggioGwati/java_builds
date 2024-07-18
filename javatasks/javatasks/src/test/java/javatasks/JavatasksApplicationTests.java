@@ -1,10 +1,10 @@
-package com.java_builds.rest_api;
+package javatasks;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RestApiApplicationTests {
+class JavatasksApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,13 +1,13 @@
-package com.java_builds.rest_api;
+package javatasks;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RestApiApplication {
+public class JavatasksApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestApiApplication.class, args);
+		SpringApplication.run(JavatasksApplication.class, args);
 	}
 
 }
