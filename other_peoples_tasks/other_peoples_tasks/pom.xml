@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.3.1</version>
+		<version>3.3.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>javatasks</groupId>
-	<artifactId>javatasks</artifactId>
+	<groupId>otherTasks</groupId>
+	<artifactId>other_peoples_tasks</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>javatasks</name>
-	<description>Task management with mongodb backend</description>
+	<name>other_peoples_tasks</name>
+	<description>Other peoples tasks</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -32,13 +32,22 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-oauth2-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>jquery</artifactId>
+			<version>3.4.1</version>
 		</dependency>
 	</dependencies>
 

@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: other_peoples_tasks
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
