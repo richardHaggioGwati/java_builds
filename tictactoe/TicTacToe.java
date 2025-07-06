@@ -47,6 +47,7 @@ public class TicTacToe {
             result = checkWinner(gameBoard);
             if (!result.isEmpty()) {
                 System.out.print(result);
+                scanner.close();
             }
         }
 
